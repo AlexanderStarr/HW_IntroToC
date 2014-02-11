@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "link.h"
 
+// Initializes the linked head and tail.
+void init(slist_t *list) {
+    list->head = NULL;
+    list->tail = NULL;
+}
+
 // Adds a new element with the supplied value to the end of
 // the linked list supplied by the pointer.
 void add(slist_t *list, int value) {
@@ -100,14 +106,19 @@ void bublesort(slist_t *list) {
 }
 
 int main() {
+    /*
+    // Tests for the linked list implementation.
     slist_t myList;
+    init(&myList);
     print(&myList);
-    add(&myList, 4);
     add(&myList, 5);
+    add(&myList, 4);
+    add(&myList, 3);
     add(&myList, 2);
     add(&myList, 1);
     print(&myList);
     bublesort(&myList);
     print(&myList);
+    */
     return 0;
 }
