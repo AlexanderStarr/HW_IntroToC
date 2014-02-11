@@ -50,5 +50,12 @@ int main() {
         // Start the authors file back at the beginning for the next search.
         authors = fopen("authors.txt", "r");
     }
+    // Close all the files.
+    int fclose(FILE *wiki);
+    int fclose(FILE *authors);
+    int fclose(FILE *output);
+    fclose(wiki);
+    fclose(authors);
+    fclose(output);
     return 0;
 }
