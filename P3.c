@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define LINE_LEN 100
+#define LINE_LEN 160
 
 // Trims the newline character from a string.
 void trim(char *string) {
